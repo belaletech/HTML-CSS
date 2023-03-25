@@ -14,16 +14,17 @@ box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "inter", sans-serif;
 }
 body {
+  height: 100vh;
   font-family: "inter", sans-serif;
   /* background: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.5) 50%,
       rgba(0, 0, 0, 0.5) 50%
-    ),
-    url("2.jpg");
-  */
+    )
+    url("2.jpg"); */
 
   background: linear-gradient(
     138deg,
@@ -31,8 +32,9 @@ body {
     rgb(0, 8, 187) 84.4%,
     rgb(255, 255, 255) 119.7%
   );
-  border-style: dotted;
-  
+  background-size: cover;
+ 
+
 }
 
 .nav {
@@ -41,10 +43,10 @@ body {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
+  box-shadow: 14px 0 6px 4px rgba(255, 255, 255, 0.25);
 }
 .navbar {
-  width: 8rem;
+  width: 7.7rem;
   height: 2rem;
   margin: 22px 10px;
 
@@ -59,6 +61,12 @@ body {
   border-radius: 0.5rem;
   font-size: 1rem;
   font-weight: bold;
+  list-style: none;
+  text-align: center;
+ 
+  
+  
+  /* display: inline-block; */
 }
 
 .navbar a {
@@ -85,9 +93,8 @@ body {
   padding-top: 10px;
 }
 .logo span {
-  color: #0073ff;
+  color: #6217e4;
 }
-
 ul li a:hover {
   color: #0073ff;
 }
@@ -96,9 +103,9 @@ ul li a:hover {
   margin-top: 22px;
   font-family: "inter", sans-serif;
   width: 200px;
-  height: 24px;
+  height: 2rem;
   background: transparent;
-  border: 1px solid #0073ff;
+  border: 1px solid #fff;
   color: #fff;
   border-right: none;
   font-size: 16px;
@@ -108,15 +115,15 @@ ul li a:hover {
   border-bottom-left-radius: 8px;
 }
 .srch::placeholder {
-  color: grey;
+  color: #fff;
 }
 .search_btn {
   width: 60px;
-  height: 24px;
-  background: #0073ff;
-  border: 2px solid #0073ff;
+  height: 2rem;
+  background: #3de417;
+  border: 1px solid #ffffff;
   margin-left: 22px;
-  color: #fff;
+  color: #0073ff;
   font-size: 12px;
   margin: 22px auto;
 }
@@ -126,6 +133,7 @@ ul li a:hover {
 .srch:focus {
   outline: none;
 }
+
 /* description/hero section  */
 
 .hero {
@@ -140,7 +148,6 @@ ul li a:hover {
   right: 20%;
   color: #fff;
   position: relative;
-  /* background-color: red; */
 }
 
 .content h1 {
@@ -187,7 +194,7 @@ ul li a:hover {
   background-color: #fff;
 }
 .content span {
-  color: #0073ff;
+  color: #6217e4;
   font-size: 60px;
 }
 
@@ -243,7 +250,7 @@ ul li a:hover {
   margin: 10px auto;
   font-family: "inter" sans-serif;
 }
-.form p{
+.form p {
   color: #fff;
 }
 .form input:focus {
@@ -252,7 +259,7 @@ ul li a:hover {
 ::placeholder {
   color: #fff;
   font-family: "inter", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .btnn {
@@ -313,20 +320,5 @@ ul li a:hover {
 .icon ion-icon:hover {
   color: #0073ff;
 }
-/* making responsive */
-/* small device/smartphones */
-
-/* @media  only screen and(max-width:537px) {
-  .form{
-    background: red;
-  }
-  form h1{
-    color: pink;
-    font-size: 1rem;
-  }
-} */
-
-
-
 
 
